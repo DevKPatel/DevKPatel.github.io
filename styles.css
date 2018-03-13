@@ -6,17 +6,12 @@ img{
 .navbar{
     background:grey;
 }
-body{
-    background-color: green;
-}
 section{
     height:600px;
 }
-#home{
-    background-color: red;
-}
 #Contacts{
-    background-color: blue;
+    background-color: white
+    ;
     
 }
 #About{
