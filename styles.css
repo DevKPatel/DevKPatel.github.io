@@ -1,0 +1,27 @@
+img{
+    width: 1000px;
+    max-height: 200px;
+    
+}
+.navbar{
+    background:grey;
+}
+body{
+    background-color: green;
+}
+section{
+    height:600px;
+}
+#home{
+    background-color: red;
+}
+#Contacts{
+    background-color: blue;
+    
+}
+#About{
+    background-color: purple;
+}
+.glyphicon{
+ font-size: 24px;   
+}
