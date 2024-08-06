@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure hunt</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 50px;
+            font-size: large;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            background-color: #333;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        input[type="button"] {
+            background-color: #00ff00;
+            color: #1c1c1c;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function checkCode() {
+            const code = document.getElementById("codeInput").value;
+            if (code === "LOVELYPEOPLE") {
+                window.location.href = "page2.html";
+            } else {
+                alert("Wrong answer!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <pre>Welcome to the online treasure hunt. Great if you made it till here. Till now it was really easy but the fun part begin now.
+        The difficulty is that you have to guess the code and enter below. And it will keep increasing as you go (from easy to medium to hard).
+        <br>
+        Story line:- On 15th july 2024, there was a guy named Dev who joined the pace creators team for the 1st time. He was someone who had a lot of fun
+        with everyone. Just after joining the class something in his mind came up and that something is what you really have to find to move on to
+        the next step. Enter the correct answer below to go further. But before trying anything there is something in the image section but i am
+        not sure what is it. Find it Mr. Dectective!
+        <br>
+        (NOTE:- Enter the correct answer without any spaces and in "UPPERCASE")
+
+        Difficulty:- easy
+    </pre>
+    <img src="morse_code.png" alt="Cryptic Image">
+    <input type="text" id="codeInput" placeholder="Enter code">
+    <input type="button" value="Submit" onclick="checkCode()">
+</body>
+</html>
